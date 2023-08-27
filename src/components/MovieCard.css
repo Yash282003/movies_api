@@ -1,0 +1,14 @@
+.container {
+    max-width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 40px;
+}
+.movie_card h1{
+    text-align: center;
+}
+.movie_card{
+    background-color: aquamarine;
+}

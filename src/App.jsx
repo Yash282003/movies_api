@@ -1,25 +1,14 @@
-import React, { useEffect, useState } from "react";
-const url = "https://www.omdbapi.com/?s=kabhi&apikey=a3787072";
-function App() {
-  const [movies, setMovies] = useState([]);
-  useEffect(() => {
-    const fetchData = async () => {
-      const response = await fetch(url);
-      const data = await response.json();
-      console.log(data);
+import React from 'react';
+import Movie from './components/Movie';
+import ContextProvider from "./context/ContextProvider";
 
-      setMovies(data.Search);
-    };
-    fetchData();
-  }, []);
-
+export default function App() {
   return (
-    <>
-      {movies.map((movie) => {
-        return <img key={movie.imdbID} src={movie.Poster} alt={movie.Title} />;
-      })}
-    </>
-  );
+    <div>
+    <ContextProvider>
+    <Movie/>
+    </ContextProvider>
+     
+    </div>
+  )
 }
-
-export default App;
