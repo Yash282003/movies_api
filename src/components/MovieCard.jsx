@@ -1,5 +1,4 @@
-import React, { useContext } from "react";
-import dataContext from "../context/datacontext";
+import React from "react";
 import "./MovieCard.css";
 function MovieCard({ movie }) {
   const IMG_PATH = "https://image.tmdb.org/t/p/w500";

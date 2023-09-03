@@ -1,7 +1,12 @@
+/* body{
+    background: linear-gradient(to bottom, rgb(60, 60, 60), rgb(42, 42, 41));
+} */
 .container {
     max-width: 1000px;
     margin-left: auto;
     margin-right: auto;
+    margin-top: 40px;
+    margin-bottom: 40px;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     gap: 40px;
@@ -10,5 +15,44 @@
     text-align: center;
 }
 .movie_card{
-    background-color: aquamarine;
+    background-color: rgb(97, 96, 96);
+}
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    background-color: rgb(149, 147, 144);
+    box-shadow: 6px solid black;
+    
+}
+.navbar .title .list{
+    display: flex;
+    align-items: center;
+   
+}
+.search_button{
+    padding-right: 10%;
+    display: flex;
+    align-items: center;
+}
+.search_button input{
+    border-radius: 10px;
+}
+.search_button button{
+    padding-left:10px ;
+   
+}
+.search_button button:hover{
+    cursor: pointer;
+   
+}
+.navbar .title .list li{
+    padding-left: 30%;
+    font-size: 17px;
+    font-weight: 600;
+}
+.nav_title{
+    font-size: 30px;
+}
+input{
+    width: 500px;
 }
