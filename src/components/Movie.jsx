@@ -28,18 +28,25 @@ function Movie() {
   return (
     <>
       <div className="navbar">
-         <div className="title">
+        <div className="title">
           <ul className="list">
-          <li className="nav_title" style={{fontSize:"30px"}}>NetChill</li>
+            <li className="nav_title" style={{ fontSize: "30px" }}>
+              Net
+              <span style={{ color: "white", fontFamily: "cursive" }}>
+                Chill
+              </span>
+            </li>
             <li>About</li>
             <li>Home</li>
             <li>Help</li>
           </ul>
-        </div> 
+        </div>
         <div className="search_button">
           <form onSubmit={handleSubmit}>
-            <input type="text" className="search" onChange={handleSearch}/>
-            <button type="submit" style={{fontWeight:600}}>Search</button>
+            <input type="text" className="search" onChange={handleSearch} />
+            <button type="submit" style={{ fontWeight: 600 }}>
+              Search
+            </button>
           </form>
         </div>
       </div>

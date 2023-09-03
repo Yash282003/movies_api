@@ -1,58 +1,86 @@
-/* body{
-    background: linear-gradient(to bottom, rgb(60, 60, 60), rgb(42, 42, 41));
-} */
+body {
+  background: linear-gradient(to bottom, rgb(210, 206, 206), rgb(78, 78, 77));
+}
 .container {
-    max-width: 1000px;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 40px;
-    margin-bottom: 40px;
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    gap: 40px;
+  max-width: 1000px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 60px;
+  margin-bottom: 60px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 60px;
 }
-.movie_card h1{
-    text-align: center;
+.movie_card h1 {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+
+  height: 48px;
+  font-size: 16px;
+  font-weight: 500;
+  flex-grow: 1;
 }
-.movie_card{
-    background-color: rgb(97, 96, 96);
+.movie_card {
+  border-radius: 19px;
 }
-.navbar{
-    display: flex;
-    justify-content: space-between;
-    background-color: rgb(149, 147, 144);
-    box-shadow: 6px solid black;
-    
+.movie_card .movie_poster {
+  min-height: 368px;
 }
-.navbar .title .list{
-    display: flex;
-    align-items: center;
-   
+.movie_card:hover {
+  transition: transform 0.2s;
+  transform: scale(1.01);
+  cursor: pointer;
 }
-.search_button{
-    padding-right: 10%;
-    display: flex;
-    align-items: center;
+
+.hero {
+  box-shadow: 5px 5px 10px #655656;
 }
-.search_button input{
-    border-radius: 10px;
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  background-color: rgb(149, 147, 144);
+  box-shadow: 5px 5px 10px #655656;
+  min-height: 60px;
 }
-.search_button button{
-    padding-left:10px ;
-   
+.navbar .title .list {
+  display: flex;
+  align-items: center;
 }
-.search_button button:hover{
-    cursor: pointer;
-   
+.search_button {
+  padding-right: 10%;
+  display: flex;
+  align-items: center;
 }
-.navbar .title .list li{
-    padding-left: 30%;
-    font-size: 17px;
-    font-weight: 600;
+.search_button input {
+  border-radius: 10px;
 }
-.nav_title{
-    font-size: 30px;
+.search_button button {
+  padding-left: 10px;
 }
-input{
-    width: 500px;
+.search_button button:hover {
+  cursor: pointer;
+}
+.navbar .title .list li {
+  padding-left: 30%;
+  font-size: 17px;
+  font-weight: 600;
+}
+.nav_title {
+  font-size: 30px;
+}
+input {
+  width: 500px;
+  border-color: #130a0a;
+}
+.movie_poster {
+  min-height: 100%;
+  min-width: 100%;
+}
+.movie_placeholder {
+  min-width: 220px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
 }
