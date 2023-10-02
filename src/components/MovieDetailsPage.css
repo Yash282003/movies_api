@@ -1,0 +1,40 @@
+
+.movieCard img{
+    width: 500px;
+    height: 650px;
+}
+.movieDetails{
+display: flex;
+align-items: center;
+justify-content: center;
+margin: 4rem 2rem;
+}
+.movieCard{
+    display: flex;
+    align-items: flex-start;
+}
+.MovieInfo h1{
+ font-size: 35px;
+ font-weight: 800;
+ font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;  
+
+}
+.MovieInfo{
+    padding: 20px;
+}
+.date{
+    padding: 10px 0;
+}
+hr{
+    width:70%;
+    height: 5px;
+    background: #4b4b4b;
+}
+.movie_para{
+    padding-top: 15px;
+    width: 700px;
+    display:flex ;
+    align-items: center;
+    font-size: 18px;
+    font-style: bold;
+}
