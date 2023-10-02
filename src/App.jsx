@@ -1,13 +1,17 @@
 import React from 'react';
-import Movie from './components/Movie';
+import Home from './Home';
 import ContextProvider from "./context/ContextProvider";
 
 export default function App() {
   return (
     <div>
     <ContextProvider>
-    <Movie/>
+    <Home/>
     </ContextProvider>
+    
+   
+   
+    
      
     </div>
   )

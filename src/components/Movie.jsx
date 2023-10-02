@@ -1,9 +1,10 @@
-import React, { useEffect, useState } from "react";
+import React, { useContext, useEffect, useState } from "react";
 import "./MovieCard.css";
 import MovieCard from "./MovieCard";
+import dataContext from "../context/datacontext";
 
 function Movie() {
-  const [movies, setMovies] = useState([]);
+  const {movies, setMovies} = useContext(dataContext);
   const [searchKey, setSearchKey] = useState("");
 
   const fetchData = async (searchKey) => {
